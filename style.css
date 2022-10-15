@@ -1,0 +1,136 @@
+::-webkit-scrollbar{
+    width: 10px;
+    background: #fff;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: #9e9e9e;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0,0,0.2);
+    background: #444446;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica,Arial, sans-serif;
+    font-size: 13px;
+    
+}
+.container{
+    margin: 30px;
+    margin-left: 3cm;
+    width: 600px;
+    height: 70vh;
+}
+.title {
+    text-align: center;
+	color: hsl(0,0%,30%);
+    font-size: 45px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: linear-gradient(
+        to right,
+        hsl(0,0%,30%)0,
+        hsl(0,0%,100%)10%,
+        hsl(0,0%,30%)20%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+}
+@keyframes shine{
+	0%{
+		background-position: 0;
+	}
+    60%{
+        background-position: 600px;
+    }
+    100%{
+        background-position: 600px;
+    }
+}
+.chat{
+    height: 90%;
+    overflow-y: scroll;
+    background: #333336;
+    border-radius: 10px 0 0 0;
+}
+.chat div{
+    margin: 10px 12px 15px;
+    line-height: 20px;
+}
+.chat .party{
+    font-weight: bold;
+
+}
+.chat .you{
+    color: #999;
+
+}
+.chat .other{
+    color: #666;
+}
+.busy{
+    right: 5cm;
+    padding: 3px 0;
+    color: #666;
+    display: none;
+    font-size: 11px;
+}
+.input{
+    margin-top: 20px;
+}
+.input input{
+    vertical-align: top;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 450px;
+    margin: 0;
+    border-radius: 5px;
+    background: #444446;
+    color: #fff;
+}
+.input a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    background: #444446;
+    padding: 7px 35px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.input a:hover{
+    background: #ddd;
+    cursor: pointer;
+    color: #000;
+}
+.text{
+    color: #fff;
+}
+.footer{
+    color: hsl(0,0%,30%);
+    position: absolute;
+    bottom: 2cm;
+    left: 8.5cm;
+    font-size: 15px;
+    height: 1px;
+}
+.wrapper{
+    color: hsl(0,0%,30%);
+    position: absolute;
+    bottom: 1cm;
+    left: 10cm;
+    font-size: 20px;
+    height: 1px;
+  
+}
